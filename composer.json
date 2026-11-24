@@ -1,0 +1,25 @@
+{
+  "name": "pixanonimo/webhook-inbox",
+  "description": "Exemplo PHP de webhooks com HMAC, janela de validade e registro idempotente de eventos.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://pixanonimo.net",
+  "keywords": [
+    "php",
+    "pix",
+    "pixanonimo"
+  ],
+  "require": {
+    "php": ">=8.2",
+    "ext-pdo": "*",
+    "ext-pdo_sqlite": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PixAnonimo\\Webhooks\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "php tests/run.php"
+  }
+}
